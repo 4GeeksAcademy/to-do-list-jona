@@ -14,8 +14,9 @@ const List = () => {
         alert("Esl espacio esta vacio!!")
 
     } 
-    const Clear=()=>{ 
-        setItems([]) 
+    const Clear=()=>{  
+      setItems([]) 
+   
       
     }
 
@@ -33,7 +34,7 @@ const List = () => {
     <ul> 
         { 
             items.map((item,index)=>{ 
-                return <li key={index}>{item}  <button onClick={Clear}>X</button></li>
+                return <li key={index}>{item}  <button onClick={()=>setItems(items.filter((_,currentIndex)=>index != currentIndex))}>X</button></li>
             })
         }
       </ul>
