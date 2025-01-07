@@ -1,0 +1,21 @@
+.boton2{   
+border-color: white;
+}
+.Cuerpo{ 
+    display: inline-block;
+} 
+.p{ 
+display:inline-block ;
+}
+
+.li-none span{ 
+    opacity: 0;  
+    /* aqui le decimos al span que desaparezca    */
+
+
+} 
+
+.li-none:hover > span{ 
+opacity: 100%;   
+/* aqui le decimos al span que aparezca  al pner el mouse encima con hover */
+}
